@@ -77,8 +77,6 @@ class EncryptionPlugin(BasePlugin):
                 f.write(result)
 
             return f"Данные успешно зашифрованы и сохранены в '{self.encrypted_file}'!"
-        
-            os.remove(self.chat_file)
             
         except Exception as e:
             return f"Ошибка при шифровании: {str(e)}"
